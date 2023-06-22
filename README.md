@@ -21,24 +21,24 @@ The AI Portfolio Management System consists of several components:
 5. `PortfolioMgmtSystem`: This class extends the `TradingSystem` class and implements the specific portfolio management logic. It connects to the Alpaca API, retrieves daily stock data, calculates delta values, and uses the AI model to make buy or sell decisions based on the predicted stock price movements.
 
 ## Usage
-1) Set up your Alpaca API credentials:
+1. Set up your Alpaca API credentials:
 
 Open the strategy.py file.
 Update the key_id and secret_key values in the AlpacaPaperSocket initialization with your Alpaca paper trading API credentials.
 Save the file.
 
-2) Prepare your historical stock data:
+2. Prepare your historical stock data:
 
 Ensure that your historical stock data is in CSV format.
 Replace the stock_data.csv file with your own CSV file, or modify the code to load your data from a different source.
 
-3) Train the AI portfolio management model:
+3. Train the AI portfolio management model:
 
 Uncomment the PMDevelopment() line in strategy.py.
 Run the strategy.py file.
 The model will be trained using the historical stock data, and the model structure and weights will be saved to model.json and result.h5, respectively.
 
-4) Run the portfolio management system:
+4. Run the portfolio management system:
 
 Uncomment the PortfolioMgmtSystem() line in strategy.py.
 Run the strategy.py file.
